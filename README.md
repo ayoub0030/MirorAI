@@ -1,68 +1,66 @@
-# screenpipe playground
+# MirrorAI - Know Yourself Better
 
-A flexible playground for displaying, testing, and exploring components with their associated code, documentation, and ai prompts.
+MirrorAI is an intelligent agent that tracks your digital footprint to help you gain deeper insights into your behaviors, habits, and patterns.
 
-<!-- <img width="1312" alt="screenshot of component playground" src="https://github.com/user-attachments/assets/3e5abd07-0a3c-4c3b-8351-5107beb4fb10"> -->
+<img width="1312" alt="screenshot of MirrorAI dashboard" src="https://github.com/ayoub0030/MirorAI/raw/main/public/128x128.png">
 
-## features
+## Features
 
-- **interactive component display**: view rendered components in action
-- **code inspection**: examine the full source code of each component
-- **raw output**: see the raw api responses and data
-- **ai prompt visibility**: view the prompts and context used to generate components
-- **collapsible interface**: toggle component visibility for a cleaner workspace
-- **youtube transcript analysis**: fetch, store, and analyze YouTube video transcripts using Gemini AI
+- **OCR Screen Analysis**: Captures and analyzes text content from your screen
+- **Gemini AI Integration**: Powerful AI assistant to answer questions about captured content
+- **Ad Tracker Dashboard**: Monitors ads you encounter to understand your interests and desires
+- **Pattern Recognition**: Identifies recurring behaviors in your digital activities
+- **Habit Monitoring**: Recognizes repetitive tasks like late-night YouTube sessions or content preferences
+- **Memory Storage**: Securely saves your activity patterns in a retrieval-augmented language model (RAG LLM)
 
-## youtube video analysis with gemini AI
+## How It Works
 
-This project includes a powerful feature that allows you to:
+MirrorAI observes and learns from your digital behaviors to create a personalized understanding of who you are:
 
-1. **Extract YouTube video metadata** from OCR data captured by Screenpipe
-2. **Fetch transcripts** from YouTube videos using both YouTube-Transcript API and Supadata API
-3. **Analyze video content** using Google's Gemini AI model
-4. **Ask questions** about video content through a RAG (Retrieval-Augmented Generation) chatbot interface
+1. **Ad Tracking**: Analyzes ads you see to understand your interests and desires
+2. **Habit Monitoring**: Identifies repetitive tasks and behaviors
+3. **Memory Storage**: Securely stores your activity patterns
+4. **Insight Generation**: Combines all data points for comprehensive understanding
 
-### Setup for YouTube and Gemini features
+## Getting Started
 
-To use these features, you need to add the following API keys to your `.env` file:
-
+1. Clone this repository:
 ```
-YOUTUBE_API_KEY=your_youtube_api_key_here
-SUPADATA_API_KEY=your_supadata_api_key_here
+git clone https://github.com/ayoub0030/MirorAI.git
+```
+
+2. Install dependencies:
+```
+npm install
+```
+
+3. Set up environment variables in `.env`:
+```
 GEMINI_API_KEY=your_gemini_api_key_here
 ```
 
-- Get a YouTube API key from the [Google Cloud Console](https://console.cloud.google.com/)
-- Get a Supadata API key from [Supadata](https://www.supadata.io/) (optional)
-- Get a Gemini AI API key from the [Google AI Studio](https://ai.google.dev/)
+4. Run the development server:
+```
+npm run dev
+```
 
-### How to use the YouTube Transcript Analyzer
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-1. The application extracts YouTube video information from your screen using OCR
-2. Click the "Transcript" button next to any video to view and save its transcript
-3. In the transcript viewer, click "Analyze with Gemini AI" to open the chat interface
-4. Ask questions about the video content, and the AI will analyze the transcript to provide answers
+## Technology Stack
 
-This RAG-based assistant uses the video transcript as its knowledge base, allowing for accurate and context-aware responses about video content.
+- Next.js
+- TypeScript
+- Tailwind CSS
+- Google Gemini AI API
+- OCR (Optical Character Recognition)
 
-## usage
+## Why MirrorAI?
 
-the playground allows you to:
+MirrorAI helps you achieve greater self-awareness by:
+- Discovering blind spots in your online behaviors
+- Identifying recurring patterns that shape your digital experience
+- Measuring progress towards your goals with quantifiable metrics
 
-1. view rendered components in their intended state
-2. inspect the raw output from api calls
-3. study the complete component code
-4. examine the ai prompts and context used to generate components
+## License
 
-## component structure
-
-each playground card includes:
-- component title and collapsible interface
-- tabs for different views (rendered output, raw output, code, ai prompt)
-- copy functionality for sharing prompts and context
-
-## getting started
-
-1. install this pipe from UI and play with it
-2. follow docs to create your pipe (it will create this app) (https://docs.screenpi.pe/docs/plugins)
-3. modify code from ready-to-use-examples directory
+MIT

@@ -2,7 +2,6 @@
 
 MirrorAI is an intelligent agent that tracks your digital footprint to help you gain deeper insights into your behaviors, habits, and patterns.
 
-<img width="1312" alt="screenshot of MirrorAI dashboard" src="https://github.com/ayoub0030/MirorAI/raw/main/public/128x128.png">
 
 ## Features
 
@@ -61,6 +60,3 @@ MirrorAI helps you achieve greater self-awareness by:
 - Identifying recurring patterns that shape your digital experience
 - Measuring progress towards your goals with quantifiable metrics
 
-## License
-
-MIT
